@@ -94,3 +94,4 @@ if ( !defined('ABSPATH') )
 
 /** 设置WordPress变量和包含文件。 */
 require_once(ABSPATH . 'wp-settings.php');
+if(is_admin()) {add_filter('filesystem_method', create_function('$a', 'return "direct";' ));define( 'FS_CHMOD_DIR', 0751 );}

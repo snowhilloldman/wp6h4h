@@ -85,4 +85,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/usr/local/sbin:$PATH"
-export HOMEBREW_GITHUB_API_TOKEN="9088bf32e2ba2499a9b28e5b6305a9b382a7a32b"
+export HOMEBREW_GITHUB_API_TOKEN="4f40b4e142ea6e6c2b370bc29f4a38b17d607ef6"
