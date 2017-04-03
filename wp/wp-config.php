@@ -64,7 +64,7 @@ define('NONCE_SALT',       'TIV3^$VuV~k]o_Uj{sWc2,$O3gFIREYT2+ a4!j[Eu1%t$N?@}Ys
  * 如果您有在同一数据库内安装多个WordPress的需求，请为每个WordPress设置
  * 不同的数据表前缀。前缀名只能为数字、字母加下划线。
  */
-$table_prefix  = 'w6';
+$table_prefix  = 'w6_';
 
 /**
  * 开发者专用：WordPress调试模式。
@@ -76,7 +76,7 @@ $table_prefix  = 'w6';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /**
  * zh_CN本地化设置：启用ICP备案号显示
@@ -94,4 +94,7 @@ if ( !defined('ABSPATH') )
 
 /** 设置WordPress变量和包含文件。 */
 require_once(ABSPATH . 'wp-settings.php');
-if(is_admin()) {add_filter('filesystem_method', create_function('$a', 'return "direct";' ));define( 'FS_CHMOD_DIR', 0751 );}
+if(is_admin()) {
+  add_filter('filesystem_method', create_function('$a', 'return "direct";' ));
+  define( 'FS_CHMOD_DIR', 0751 );
+}
