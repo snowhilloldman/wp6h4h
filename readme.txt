@@ -7,17 +7,26 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 vim command run  :VundleInstall
 
+ln -s /Users/snowman/6h4h/wp6h4h/etc/zshrc /Users/snowman/.zshrc
+
+
+
+
+
+
+ln -s $HOME/6h4h/wp6h4h/lvapi/composer.json $HOME/6h4h/blog/composer.json
+
+
+
 
 
 
 theme: Responsive Mobile | Wellington   
 plugin: NextGEN 
 
-ln -s /Users/snowman/6h4h/wp6h4h/etc/zshrc /Users/snowman/.zshrc
 
 
 6h4h
-	wordpress
 	wp6h4h
 		etc
 	wp
